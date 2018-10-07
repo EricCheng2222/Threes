@@ -23,6 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07534FBC2161978300D0AE49 /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		07534FBD216197D500D0AE49 /* agent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = agent.h; sourceTree = "<group>"; };
+		07534FBE21619C9400D0AE49 /* boardUtilOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boardUtilOperation.h; sourceTree = "<group>"; };
 		07DBBB2721610399003835C7 /* Threes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threes; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DBBB2A21610399003835C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				07DBBB2A21610399003835C7 /* main.cpp */,
+				07534FBD216197D500D0AE49 /* agent.h */,
+				07534FBE21619C9400D0AE49 /* boardUtilOperation.h */,
+				07534FBC2161978300D0AE49 /* Board.h */,
 			);
 			path = Threes;
 			sourceTree = "<group>";

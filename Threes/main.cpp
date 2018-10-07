@@ -7,9 +7,35 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <random>
+#include <chrono>       // std::chrono::system_clock
+#include "Board.h"
+#include "agent.h"
+using namespace std;
+
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int evilType = 0;
+    int playerType = 1;
+    int totalPlay = 1000;
+    
+    agent evil(evilType);
+    agent player(playerType);
+    Board b;
+    for (int i=0; i<totalPlay; i++) {
+        b.initialize(&evil, &player);
+        evil.initialize();
+        player.initialize();
+        while (b.isFinish()==false) {
+            agent *nowPlay = b.whoseTurn();
+            int stat = b.playByAgent(nowPlay);
+            if (stat==-1) break;
+        }
+        b.saveStatistic();
+    }
+    b.showStatistic(totalPlay);
+    
     return 0;
 }
